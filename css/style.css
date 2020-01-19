@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Roboto";
+    position: relative;
+    color: var(--main-header-color);
+    background: var(--main-bg-color);
+}
+
+a {
+    color: var(--white);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1 {
+    font-family: "Lato";
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+
+}
+
+h2 {
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 28px;
+    font-weight: 530;
+    margin-bottom: 0.7rem;
+    line-height: 5px;
+    font-family: "Roboto";
+}
+
+p {
+    color: var(--main-paragraph-color);
+    font-size: var(--main-small-font-size);
+}
+
+.btn {
+    font-size: var(--btn-font-size);
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.375rem 1.35rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    border-radius: 3px;
+    background-color: var(--black);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    padding: 0.6rem 2rem;
+    border: 0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not([disabled]):not(.disabled).active,
+.btn-primary:not([disabled]):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: var(--main-red-color);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.section {
+    padding: 50px 0 70px 0;
+}
+
+/* NAVBAR
+----------------------*/
+
+.nav-menu {
+    padding: 0;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.nav-menu.is-scrolling {
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+.nav-menu {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 18px;
+    }
+    .navbar-nav>.nav-item>.nav-link.active:after {
+        content: "";
+        border-bottom: 2px solid var(--main-red-color);
+        left: 1rem;
+        right: 1rem;
+        bottom: 5px;
+        height: 1px;
+        position: absolute;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-nav.is-scrolling {
+        padding-bottom: 1rem;
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+}
+
+
+/* HERO
+----------------------*/
+
+header {
+    padding: 100px 0 0;
+    text-align: center;
+}
+
+/* FEATURES
+----------------------*/
+
+.gradient-fill:before {
+    color: #fc0700;
+    background: -moz-linear-gradient(top, var(--black) 0%, #fc0003 var(--full-dimension));
+    background: -webkit-linear-gradient(top, var(--black) 0%, #fc0003 var(--full-dimension));
+    background: linear-gradient(to bottom,  var(--black) 0%, #fc0003 var(--full-dimension));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* despre noi */
+.box-icon {
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    padding: 10px;
+    width: 70px;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+    background-color: var(--white);
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-item .nav-link,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    padding: 1rem 1rem;
+    border-color: #faf6fb #faf6fb  var(--white);;
+    font-size: var(--main-small-font-size);
+    color: var(--main-red-color);
+    background: #f5eff7;
+}
+
+.nav-tabs .nav-link.active {
+    background: var(--white);
+    border-top-width: 3px;
+    border-color: var(--main-red-color) #faf6fb var(--white);
+    color: var(--main-red-color);
+}
+.card-decks {
+     display: flex;
+}
+
+/*  PRICING
+----------------------*/
+.blockquote {
+    color: var(--main-paragraph-color);
+    font-weight: 400;
+    padding: 0 15px;
+    text-align: center;
+}
+
+@media (max-width:992px) {
+    .card-deck {
+        /* -ms-flex-direction: column;
+        flex-direction: column; */
+    }
+    .card-deck .card {
+        margin-bottom: 15px;
+    }
+}
+
+.card.pricing {
+}
+
+.card.pricing .card-head {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.card.pricing .card-head .price {
+    display: block;
+    font-size: 45px;
+    font-weight: 540;
+    letter-spacing: -2px;
+}
+
+.card.pricing .card-head .price sub {
+    bottom: 0;
+    font-size: 55%;
+    font-weight: 400;
+}
+
+.card.pricing .list-group-item {
+    border: 0;
+    text-align: center;
+    color: var(--main-paragraph-color);
+    padding: 1.05rem 1.25rem;
+    font-size: var(--main-small-font-size);
+}
+
+.card.pricing .card-body {
+    padding:  0  1.75rem  1.75rem 1.75rem;
+}
+.image-log-nav-bar{
+    width: 45px;
+    height: 45px;
+}
