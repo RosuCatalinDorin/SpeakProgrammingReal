@@ -1,6 +1,6 @@
 var setAjaxCall = (function() {
   "use strict";
-  var BASE_URL = "https://speakprogramming.ro/php/view/";
+  var BASE_URL = "https://speakprogramming.ro/dev/php/view/";
   var links = {
     getCourses: BASE_URL + "getCursuri.php",
     getCourseById: BASE_URL + "getCours.php?CURS_ID=",
