@@ -8,5 +8,4 @@ var tehAdvanceJavascript = {
 
 var tehPhpSql = {
     tehFolosite :["PHP","Apache","Server/Client","WebService","HTTP - Requests","Securitate","Browsers","GitHub","Introducere în baze de date","Principii de design și arhitectură","Limbajul SQL","Stored Procedures","Database Administration","Database Optimization"]
-
 };
